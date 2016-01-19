@@ -1,0 +1,106 @@
+body{
+
+	margin: auto 0 0px;
+	-webkit-text-size-adjust: none;
+  height: 100%;
+}
+
+
+.land-main{
+
+    position:absolute;
+
+     z-index:15;
+     top:50%;
+     left:50%;
+     margin:-30px 0 0 -140px;
+}
+
+@media only screen and (max-width: 800px) {
+
+  .land-main{
+
+    width: 70%;
+
+}
+
+
+
+}
+.table-box{
+
+	max-height: 120px;
+	line-height: 0px;
+	min-height: 170px;
+
+	overflow: scroll;
+}
+
+
+.day-box{
+	max-height: 120px;
+	line-height: 0px;
+	min-height: 222px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: auto;
+   /* Trigger vertical scroll    */
+
+}
+.day-panel
+{
+
+
+	display: inline-block;
+  transition: box-shadow .25s;
+  padding: 2px;
+  margin: 0.5rem 0.1rem 1rem 0;
+  border-radius: 2px;
+  height: 12em;
+  width: 10em;
+
+}
+
+.day-panel:hover{
+
+
+  transition: box-shadow .25s;
+  box-shadow: 0px 5px 10px 0px #fff, 0 5px 0px 0px #fff;
+}
+
+
+.news-item, .reduce-text tbody tr td {
+
+font-size: 1rem;
+
+}
+
+.news-item{
+
+line-height: 20px;
+
+}
+
+.hour-item{
+
+line-height: 12px;
+}
+.map-box{
+
+	height: 170px;
+}
+
+.weather-icon{
+
+	padding-left: 20px;
+}
+
+.footer{
+  font-size: 0.6rem;
+  position: relative;
+  
+}
+.footer a {
+  color: grey;
+}
