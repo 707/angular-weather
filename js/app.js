@@ -60,7 +60,7 @@ angular.module('weatherApp', ['ngMap'])
 
 
 .service('weather',function($http){
-	var key = "&APPID=2bf865f9f8d329291957fa69d05496d1";
+	var key = "&APPID=";
 
 	
 	this.gethourly = function(city , callback){
