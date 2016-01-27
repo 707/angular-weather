@@ -95,7 +95,7 @@ angular.module('weatherApp', ['ngMap'])
 		});
 
 		//https://developers.google.com/news-search/v1/jsondevguide#audience
-		var req = "https://ajax.googleapis.com/ajax/services/search/news?v=1.0&rsz=8&scoring=d&q=" + city + "%20weather;
+		var req = "https://ajax.googleapis.com/ajax/services/search/news?v=1.0&rsz=8&scoring=d&q=" + city + "%20weather";
 		$http.get(req).then(callback);
 		city = '';
 
