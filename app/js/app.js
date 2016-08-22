@@ -98,6 +98,7 @@ angular.module('weatherApp', ['ngMap'])
 		var req = "https://ajax.googleapis.com/ajax/services/search/news?v=1.0&rsz=8&scoring=d&q=" + city + "%20weather&userip=" + ip;
 		$http.get(req).then(callback);
 		city = '';
+		//Need to add headers for CORS requests. Not working in openshift demo becuase of origin.
 
 	}; //end getnews
 
