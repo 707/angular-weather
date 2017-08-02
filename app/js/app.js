@@ -9,14 +9,14 @@ angular.module('weatherApp', ['ngMap'])
 			    $scope.lat = response.data.city.coord.lat; //city-lat
 			    $scope.lon = response.data.city.coord.lon; //city-lon
 			    $scope.hourly_list= response.data.list;  //hourly-list
-			    $scope.marker = "http://openweathermap.org/img/w/" + $scope.hourly_list[0].weather[0].icon + ".png"; //
+			    $scope.marker = "https://openweathermap.org/img/w/" + $scope.hourly_list[0].weather[0].icon + ".png"; //
 
 			    });
 
 				weather.getweekly(city_name , function (response) {
 			    $scope.weekly = response.data; //weekly-list
 			    $scope.weekly_list = response.data.list;
-			    $scope.owm = "http://openweathermap.org/img/w/";
+			    $scope.owm = "https://openweathermap.org/img/w/";
 
 			    });
 
@@ -66,7 +66,7 @@ angular.module('weatherApp', ['ngMap'])
 	this.gethourly = function(city , callback){
 
 
-		var api = "http://api.openweathermap.org/data/2.5/forecast?q=" + city +"&units=metric"+ key;
+		var api = "https://api.openweathermap.org/data/2.5/forecast?q=" + city +"&units=metric"+ key;
 		$http.get(api).then(callback);
 
 	};
@@ -74,7 +74,7 @@ angular.module('weatherApp', ['ngMap'])
 	this.getweekly = function(city , callback){
 
 
-		var api = "http://api.openweathermap.org/data/2.5/forecast/daily?q=" + city +"&units=metric"+ "&cnt=10" + key;
+		var api = "https://api.openweathermap.org/data/2.5/forecast/daily?q=" + city +"&units=metric"+ "&cnt=10" + key;
 		$http.get(api).then(callback);
 
 	};
@@ -86,7 +86,7 @@ angular.module('weatherApp', ['ngMap'])
 
 	this.getnews = function(city, callback){
 
-		var json = 'http://ipv4.myexternalip.com/json';
+		var json = 'https://ipv4.myexternalip.com/json';
 		$http.get(json).then(function (response) {
 		ip = response.data.ip;  //get client's IP address to reduce spam requests.
 
